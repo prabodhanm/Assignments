@@ -1,0 +1,11 @@
+The file stock.csv contains a daily closing price of a few stocks.
+
+	- Load this file as a DataFrame / DataSet / RDD
+	- Compute the average daily return of every stock for each date. Print the result in the below format
+	----------------------------------------------------------------------
+	Date			Average_Return
+	----------------------------------------------------------------------
+	yyyy-MM-dd		Return of all stocks on 
+				that date
+	----------------------------------------------------------------------
+
