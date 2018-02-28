@@ -1,0 +1,5 @@
+File "Amazon_Cells_Labelled.txt" contains all the sentiment sentences which contains various positive and negative statements
+
+Give me the approximate number of positive and negative statements in this file
+
+
