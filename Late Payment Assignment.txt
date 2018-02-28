@@ -1,0 +1,4 @@
+The file Loan.csv contains all the loan details
+
+1) Give me the details of the customers who have record of making late payment for last 3 consecutive months.
+2) Give me the details of the customers who have have been making payment on time for last 1 year.
