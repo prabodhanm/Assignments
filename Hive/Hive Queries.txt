@@ -1,0 +1,3 @@
+1) Using Hive script, find top 11 average rated "Action" movies with descending order of rating. (Show the create table command, load from local, and the Hive query).
+
+2) Using Hive script, List all the movies with its genre where the movie genre is Action or Drama and the average movie rating is in between 4.4 - 4.9 and only the male users rate the movie. (Show the create table command, load from local, and the Hive query).
