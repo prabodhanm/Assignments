@@ -1,0 +1,2 @@
+1) Create an RDD with integer array
+2) Write a program to filter the even number and print on the screen

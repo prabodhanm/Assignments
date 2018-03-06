@@ -1,0 +1,2 @@
+1) Read 'movie' csv in an RDD.
+2) Filter all the movies directed by 'Robert Wise' and show the output on the screen
