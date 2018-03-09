@@ -1,0 +1,14 @@
+Write a program to find the number of occurrences of first character in each word of a file
+
+e.g. in the below statement
+
+With over 100 prestigeous awards to our credit and expertise perfected over 48 years.
+
+output
+=======
+(W, 1)
+(o, 3)
+(p,1) 
+(a,2) ........ likewise
+
+Use "Shakespeare.txt" file from DataSet folder as an input file
