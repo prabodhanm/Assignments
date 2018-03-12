@@ -1,0 +1,7 @@
+Details are as below
+
+1) Write a spark program to get top 3 crime types based on the number of incidents happened areawise.
+2) Input file : crimes.csv
+3) File is uploaded to Dataset folder
+
+
