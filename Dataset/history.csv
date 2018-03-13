@@ -1,0 +1,20 @@
+id,Name,Address,Date_time,mobile
+1,Nikhil,Kharghar,2018-03-11,7588491553
+2,Sumit,Indore,2018-03-10,8783667279
+3,Hitesh,Badlapur,2018-03-10,9743737099
+4,Prabodhan,Dombivali,2018-03-11,9921737899
+5,omkar,Badlapur,2018-03-10,7739839909
+6,Vinit,Badlapur,2018-03-10,5667735367
+7,Abhijit,Andheri,2018-03-10,1909288166
+8,Deepak,Charkop,2018-03-11,123789397
+
+
+
+Insert --> if record is not present in history table status would be insert
+Update -->  if match is found then check if mobile number is different. if yes then status is update
+else
+" "
+
+
+
+

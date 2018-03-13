@@ -1,0 +1,21 @@
+1) There are two input files say "Type1.csv" and "history.csv"
+2) You can download these files from the Dataset folder
+
+Requirement
+---------------------
+1) Type1 file will be having only current date data.
+2) History file will be having all the historical data till one day prior to the current date
+3) Retrieve only one day prior data from history table into DataFrame
+4) Compare  Type1 data with this retrieved data and give the status of each record as below
+	a) If record is present in Type1 and not in History its status would be "Insert"
+	b) If you are getting a match for a record in history but "mobile" value differs, in that case status would be "Update"
+	c) for rest of the cases status would be blank
+
+Output
+-----------
+
+------------------------------------------------------------
+Id 	Name	Date_time	Status
+-------------------------------------------------------------
+1	Nikhil	2018-03-11	Insert
+------------------------------------------------------------
