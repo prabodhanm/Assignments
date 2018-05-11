@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../Script/countries.js"></script>
+	</head>
+
+	<body data-ng-app="myApp">
+		<div data-ng-controller="myController">
+			<ul data-ng-repeat="country in countrydata">
+				<li>{{country.name}}</li>
+				<ul data-ng-repeat="city in country.cities">
+					<li>{{city.name}}</li>
+					
+				</ul>
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../Script/empsort.js"></script>
+		<link rel="stylesheet" type="text/css" href="../CSS/style.css">
+	</head>
+
+		<body ng-app="myApp">
+		<div id="divemp" ng-controller="myController">
+			<select data-ng-model="sortColumn">
+				<option value="select">Select</option>
+				<option value="empname">Name ASC</option>
+				<option value="DOB">DOB ASC</option>
+				<option value="gender">Gender ASC</option>
+				<option value="-salary">Salary DESC</option>
+			</select> <br /><br />
+			<table>
+				<thead>
+					<th data-ng-click="sortData('empname')">Name</th>
+					<th data-ng-click="sortData('DOB')">DOB</th>
+					<th data-ng-click="sortData('gender')">Gender</th>
+					<th data-ng-click="sortData('salary')">Salary</th>
+				</thead>
+
+				<tbody>
+					<tr ng-repeat="emp in employees | orderBy:sortColumn: reverseOrder">
+						<td>{{emp.empname}}</td>
+						<td>{{emp.DOB | date:"dd/MM/yyyy"}}</td>
+						<td>{{emp.gender}}</td>
+						<td>{{emp.salary}}</td>
+					</tr>
+
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>

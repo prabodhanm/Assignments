@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../Script/employee.js"></script>
+		<!--<link href="CSS/style.css" rel="stylesheet">-->
+		<!--<script type="text/javascript">
+			function Employee($scope){
+				var emp = [
+					{empid:100,empname:"Aniket",gender:"Male",salary:50000},
+					{empid:200,empname:"Deepa",gender:"Female",salary:60000},
+					{empid:300,empname:"Vinay",gender:"Male",salary:55000},
+					{empid:400,empname:"Nilesh",gender:"Male",salary:70000},
+					{empid:500,empname:"Aditi",gender:"Female",salary:45000}
+				];
+			$scope.employees = emp;
+			}
+
+			var myapp = angular.module("myApp", []);
+			myapp.controller("myController",Employee);
+		</script>-->
+	</head>
+
+
+	<body ng-app="myApp">
+		<div id="divemp" ng-controller="myController">
+			<table>
+				<thead>
+					<th>Emp Id</th>
+					<th>Employee Name</th>
+					<th>Gender</th>
+					<th>Salary</th>
+				</thead>
+
+				<tbody>
+					<tr ng-repeat="emp in employees">
+						<td>{{emp.empid}}</td>
+						<td>{{emp.empname}}</td>
+						<td>{{emp.gender}}</td>
+						<td>{{emp.salary}}</td>
+					</tr>
+
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>

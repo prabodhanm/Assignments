@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../Script/technology.js"></script>
+	</head>
+
+
+	<body data-ng-app="myApp">
+		<div data-ng-controller="myController">
+			<table>
+				<thead>
+					<th>Technology</th>
+					<th>Likes</th>
+					<th>Dislikes</th>
+					<th>Likes/Dislikes</th>
+				</thead>
+				<tbody>
+					<tr data-ng-repeat="tech in technologies">
+						<td>{{tech.name}}</td>
+						<td>{{tech.likes}}</td>
+						<td>{{tech.unlikes}}</td>
+						<td>
+							<input type="button" name="Likes" value="Likes" data-ng-click="incrementLikes(tech)">
+							<input type="button" name="Unlikes" value="Unlikes" data-ng-click="incrementUnlikes(tech)">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
