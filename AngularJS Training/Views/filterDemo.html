@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../Script/employee.js"></script>
+		<link href="../CSS/style.css" rel="stylesheet">
+		
+	</head>
+
+
+	<body ng-app="myApp">
+		<div id="divemp" ng-controller="myController">
+			Search Criteria: 
+			<input data-ng-model="searchText.empname"  type="text" name="txtemp" placeholder="Search Name"> &nbsp;
+			<input data-ng-model="searchText.city"  type="text" name="txtemp" placeholder="Search City"> &nbsp;
+			<input data-ng-model="exactsearch" type="checkbox" name="chkexactsearch">Exact Search
+			<br /><br /> 
+			<table>
+				<thead>
+					<th>Emp Id</th>
+					<th>Employee Name</th>
+					<th>Gender</th>
+					<th>City</th>
+					<th>Salary</th>
+				</thead>
+
+				<tbody>
+					<tr ng-repeat="emp in employees | filter:searchText:exactsearch">
+						<td>{{emp.empid}}</td>
+						<td>{{emp.empname}}</td>
+						<td>{{emp.gender}}</td>
+						<td>{{emp.city}}</td>
+						<td>{{emp.salary}}</td>
+					</tr>
+
+				</tbody>
+			</table>
+			
+		</div>
+	</body>
+</html>

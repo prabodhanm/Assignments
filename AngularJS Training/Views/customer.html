@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<!-- <script src="../Script/employee.js"></script> -->
+		<link href="../CSS/style.css" rel="stylesheet">
+		<script>
+			function Customer($scope){
+				$scope.custid = "1";
+				$scope.custname = "Kiran";
+			}
+			var myapp = angular.module("myApp",[]);
+				myapp.controller('myController', Customer);
+		</script>
+		<body data-ng-app="myApp">
+			<div data-ng-controller="myController">
+				<div>
+					Cust Id: <input  type="text" > <br /><br />
+					Cust Name: <input type="text">
+				</div>
+				<div>
+					<table>
+						<thead>
+							<th>CustId</th>
+							<th>Cust Name </th>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span data-ng-bind="custid"></span></td>
+								<td><span data-ng-bind="custname"></span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</body>
+	</head>
